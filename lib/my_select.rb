@@ -3,8 +3,8 @@ def my_select(collection)
   newColl = []
   while collection.length > count
     if (collection[count] % 2 == 0)
-      result = yield collection[count] # yield first
-      newColl.push(collection[count]) if result # then push to newColl if required
+      result = yield collection[count] 
+      newColl.push(collection[count]) if result
     end
     count += 1
   end
